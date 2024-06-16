@@ -1,11 +1,4 @@
-/**
- * Token-Generator: https://remote-storage.developerakademie.org/token-generator
- */
-
-const STORAGE_TOKEN = '441D59WVPL1TM4PQXPZBMD2DVHMTLLM72U8YTPTA';
-const STORAGE_URL = 'https://remote-storage.developerakademie.org/item';
-
-const BASE_URL = "https://join-1ea34-default-rtdb.europe-west1.firebasedatabase.app/";
+const BASE_URL = "https://mariomarkwart-join-default-rtdb.europe-west1.firebasedatabase.app/";
 const FIREBASE_TASKS_ID = '-NyjPfIkvaXKtVoSc38U';
 const FIREBASE_USERS_ID = '-NyjPrly5jgHTGp4FS99';
 
