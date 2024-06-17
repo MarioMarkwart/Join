@@ -9,6 +9,9 @@
   --clr-icon: #A8A8A8;
   --clr-style-lightgrey: #D1D1D1;
   --clr-style-lightblue: #29ABE2;
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #a8a8a8;
+  --sb-size: 16px;
 }
 
 * {
@@ -67,33 +70,21 @@ a {
   cursor: pointer;
 }
 
-*::-webkit-scrollbar {
-  width: 1.5rem;
-  height: 1.5rem;
+::-webkit-scrollbar {
+  width: var(--sb-size)
 }
 
-*::-webkit-scrollbar-track {
-  background: transparent;
+::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 18px;
 }
 
-*::-webkit-scrollbar-thumb {
-  border: 0.5rem solid hsl(0 100% 100% / 1);
-  height: 3.3125rem;
-  background-color: #a8a8a8;
-  border-radius: 0.75rem;
+::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 18px;
+  border: 4px solid #ffffff;
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #a8a8a8;
-}
-
-*::-webkit-scrollbar-button {
-  height: 4px;
-  width: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 *::-webkit-scrollbar-button:single-button:vertical:decrement {
   background-image: url("./assets/img/arrow_up.png");
