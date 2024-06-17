@@ -223,7 +223,6 @@ function editContact(id) {
 }
 
 
-
 /**
  * Saves the edited contact by updating the contact object with the values from the input fields.
  * If the contact is found in the contacts array, it is updated and logged to the console.
@@ -273,24 +272,6 @@ function editContactCard(contact) {
 
 
 /**
- * Deletes a contact from the local storage.
- *
- * @param {number} contactId - The ID of the contact to be deleted.
- * @return {undefined} This function does not return a value.
- */
-function deleteContactFromLocalStorage(contactId) {
-  var contacts = JSON.parse(localStorage.getItem("contacts"));
-
-  if (contacts) {
-    contacts = contacts.filter(function (contact) {
-      return contact.id !== contactId;
-    });
-    localStorage.setItem("contacts", JSON.stringify(contacts));
-  }
-}
-
-
-/**
  * Deletes a contact from the Firebase database and local storage.
  *
  * @param {number} id - The ID of the contact to be deleted.
@@ -318,7 +299,6 @@ async function deleteContact(id) {
  * @return {void} This function does not return anything.
  */
 function removeContact(id) {
-  deleteContactFromLocalStorage(id);
   deleteContact(id);
   contactsInit();
 }

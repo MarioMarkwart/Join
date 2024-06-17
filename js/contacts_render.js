@@ -122,7 +122,7 @@ function renderEditContactHTML(id, name, contactColor) {
                       <img src="./assets/img/icon-mail.png" alt="">
                   </div>
                   <div class="input-frame">
-                      <input id="contactPhone" type="tel" placeholder="Phone" autofocus required>
+                      <input id="contactPhone" type="tel" pattern="[0-9]*" placeholder="Phone" autofocus required>
                       <img src="./assets/img/icon-call.png" alt="">
                   </div>
                   <div id="addContactButton" class="addContactButton">
