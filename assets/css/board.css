@@ -3,13 +3,6 @@
     flex-direction: column;
     overflow: auto;
     width: 100%;
-
-    /* Disable text selection */
-    & *{
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-    }
 }
 
 .hideBoard{
@@ -35,8 +28,8 @@
         display: flex;
         flex-direction: column;
         padding: 11px 0 0 36px;
-        /* height: 75vh; */
     }
+
     .addTaskBodyLeft{
         height: 85%;
         padding: 11px 42px 0 36px;
@@ -69,7 +62,6 @@
     .clearBtn{
         display: none;
     }
-
 }
 
 .boardAddTaskHeader{
@@ -110,7 +102,7 @@
     gap: 35px;
 
     & :has(input:focus).searchTaskContainer{
-        border: 1px solid #4589FF;
+        border: 1px solid var(--clr-main)
     }
 
 }
@@ -122,7 +114,7 @@
     font-size: 16px;
     font-weight: 400;
     width: 312px;
-    border: 1px solid #A8A8A8;
+    border: 1px solid var(--clr-icon);
     border-radius: 10px;
 }
 
@@ -220,7 +212,7 @@ button:focus {
 }
 
 .drag-area-highlight {
-    border: 2px dashed #4589FF;
+    border: 2px dashed var(--clr-main);
 }
 
 .dragging{
@@ -243,9 +235,9 @@ button:focus {
     width:100%;
     min-height: 48px;
     background-color: #e7e7e7;
-    border: 1px dashed #A8A8A8;
+    border: 1px dashed var(--clr-icon);
     border-radius: 10px;
-    color: #A8A8A8;
+    color: var(--clr-icon);
     width: 253px;
 }
 
@@ -321,7 +313,7 @@ button:focus {
 }
 
 .cardTitle{
-    color: #4589FF;
+    color: var(--clr-main);
     width: 220px;
     font-weight: 700;
     font-size: 16px;
@@ -332,7 +324,7 @@ button:focus {
 }
 
 .cardText{
-    color: #A8A8A8;
+    color: var(--clr-icon);
     font-weight: 400;
     font-size: 16px;
 }
@@ -342,17 +334,16 @@ button:focus {
     flex-direction: column;
     gap: 24px;
 }
-    
     .assignedToAndPriority{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
 }
+
 .cardTopContainer{
     display: flex;
     flex-direction: column;
-gap: 24px
+    gap: 24px
 }
 
 .cardPriority{
@@ -369,7 +360,6 @@ gap: 24px
     align-items: center;
 }
 
-/*progress-bar*/
 progress{
     appearance: none;
     height: 8px;
@@ -381,7 +371,7 @@ progress{
     border-radius: 10px;
 }
 ::-webkit-progress-value{
-    background: #4589FF;
+    background: var(--clr-main);
     border-radius: 10px;
 }
 
@@ -450,7 +440,6 @@ progress{
 }
 
 
-/* Animations success message */
 @keyframes successIn {
     from{
         transform: translateY(0) ;
@@ -590,7 +579,7 @@ progress{
     padding: 6px 16px;
     gap: 16px;
     font-size: 1rem;
-    text-transform: capitalize;  /* has to be??  */
+    text-transform: capitalize;
 }
 
 .openCardSubtaskImgContainer{
@@ -651,7 +640,6 @@ progress{
 
         & span{
             color: #005dff;
-
         }
 
         #openCardImgDelete {
@@ -727,7 +715,6 @@ progress{
     .empty-category{
         border-radius: 24px;
     }
-
 }
 
 @media (max-width: 800px){
@@ -798,10 +785,8 @@ progress{
     .openCardContainer[editing] {
 
         .addTaskBodyLeft {
-            /* padding-inline: 18px; */
             width: 100%;
         }
-
     }
 
     .openCardContainer {
@@ -852,17 +837,17 @@ progress{
 
             ;
         }
+
         ::-webkit-scrollbar {
             display: none;
         }
     }
 
 }
-    
+
 @media (max-width: 450px) {
     .openCardContainer,
     .openCardContainer[editing] {
-        /* width: clamp(290px, 100%, 400px); */
         width: 100%;
         padding: 24px 30px 24px 30px;
         }
@@ -906,7 +891,6 @@ progress{
     .openCardContainer{
         padding: 15px;
     }
-
 
     .openCardContainer[editing] {
         padding:5px;

@@ -85,7 +85,6 @@
   rotate: -90deg;
   position: absolute;
   z-index: -1;
-  /* left: 50%; */
 }
 
 .loginInputField {
@@ -94,7 +93,6 @@
   align-items: self-end;
   width: 422px;
   border-bottom: 1px solid #d1d1d1;
-  /* margin-bottom: 24px; */
   padding: 12px 21px;
   gap: 34px;
 }
@@ -173,7 +171,6 @@ input[type="password"]:focus {
 
 .loginButtonGuest {
   color: #647188;
-  /* margin-left: 35px; */
   background-color: #fff;
   border: 1px solid #647188;
   white-space: nowrap;
@@ -251,7 +248,6 @@ input[type="password"]:focus {
   z-index: 1;
 }
 
-/*/////////////////////////MOBILE///////////////////////////*/
 @media (max-width: 970px) {
   .joinLogoBlue img {
     width: 64px;
@@ -271,7 +267,6 @@ input[type="password"]:focus {
   .login-box {
     padding: 24px 56px;
     width: -webkit-fill-available;
-    /* margin: 32px 12px 0 18px; */
   }
 
   .loginEmailBox,

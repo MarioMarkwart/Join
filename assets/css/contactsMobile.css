@@ -2,19 +2,19 @@ body {
     margin: 0;
     line-height: normal;
   }
-  
+
   :root {
     /* fonts */
     --version-2-body: "Open Sans";
     --font-inter: Inter;
-  
+
     /* font sizes */
     --font-size-mini: 0.938rem;
     --version-2-body-size: 1rem;
     --version-2-t6-size: 1.188rem;
     --font-size-xs: 0.75rem;
     --font-size-lg: 1.125rem;
-  
+
     /* Colors */
     --version-2-main-color: #4589ff;
     --white: #fff;
@@ -74,23 +74,27 @@ body {
     flex-shrink: 0;
     display: none;
   }
+
   .capa-1-icon {
     height: 2.438rem;
     width: 2rem;
     position: relative;
   }
+
   .capa-3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
+
   .header-moile-child {
     height: 2.5rem;
     width: 2.5rem;
     position: relative;
     min-height: 2.5rem;
   }
+
   .header-moile {
     align-self: stretch;
     box-shadow: var(--barra-superior);
@@ -105,6 +109,7 @@ body {
     position: sticky;
     gap: var(--gap-xl);
   }
+
   .a {
     margin: 0;
     position: relative;
@@ -115,6 +120,7 @@ body {
     display: inline-block;
     min-width: 0.75rem;
   }
+
   .a-wrapper {
     align-self: stretch;
     display: flex;
@@ -127,6 +133,7 @@ body {
     color: var(--color-black);
     font-family: var(--version-2-body);
   }
+
   .frame-child {
     align-self: stretch;
     position: relative;
@@ -135,6 +142,7 @@ body {
     overflow: hidden;
     max-height: 100%;
   }
+
   .contact-list-v1-mobile-inner {
     align-self: stretch;
     height: 1rem;
@@ -145,10 +153,12 @@ body {
     padding: var(--padding-5xs) 0;
     box-sizing: border-box;
   }
+
   .am,
   .frame-item {
     position: absolute;
   }
+
   .frame-item {
     top: 0;
     left: 0;
@@ -159,6 +169,7 @@ body {
     width: 100%;
     height: 100%;
   }
+
   .am {
     top: 1rem;
     left: 0.438rem;
@@ -170,11 +181,13 @@ body {
     height: 0.625rem;
     z-index: 1;
   }
+
   .ellipse-parent {
     height: 2.625rem;
     flex: 1;
     position: relative;
   }
+
   .profile-badge {
     width: 2.625rem;
     border-radius: var(--br-26xl);
@@ -184,6 +197,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   .anton-mayer {
     margin: 0;
     position: relative;
@@ -194,6 +208,7 @@ body {
     display: inline-block;
     min-width: 7.188rem;
   }
+
   .antomgmailcom {
     position: relative;
     font-size: var(--version-2-body-size);
@@ -201,12 +216,14 @@ body {
     color: var(--version-2-main-color);
     white-space: nowrap;
   }
+
   .anton-mayer-parent,
   .contact-name {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
+
   .anton-mayer-parent {
     flex-direction: column;
     gap: var(--gap-8xs);
@@ -215,6 +232,7 @@ body {
     color: var(--color-black);
     font-family: var(--version-2-body);
   }
+
   .contact-name {
     align-self: stretch;
     border-radius: var(--br-3xs);
@@ -223,6 +241,7 @@ body {
     padding: var(--padding-mini) var(--padding-5xl);
     gap: var(--gap-16xl);
   }
+
   .frame-inner {
     position: absolute;
     top: 0;
@@ -234,6 +253,7 @@ body {
     width: 100%;
     height: 100%;
   }
+
   .anton-mayer-container {
     flex-direction: column;
     gap: var(--gap-8xs);
@@ -242,9 +262,7 @@ body {
     color: var(--color-black);
     font-family: var(--version-2-body);
   }
-  
-  
-  
+
   .m {
     margin: 0;
     position: relative;
@@ -255,6 +273,7 @@ body {
     display: inline-block;
     min-width: 1.063rem;
   }
+
   .m-wrapper {
     align-self: stretch;
     display: flex;
@@ -268,6 +287,7 @@ body {
     color: var(--color-black);
     font-family: var(--version-2-body);
   }
+
   .frame-footer {
     align-self: stretch;
     height: 1rem;
@@ -285,6 +305,7 @@ body {
     flex: 1;
     position: relative;
   }
+
   .profile-badge6 {
     width: 2.625rem;
     border-radius: var(--br-26xl);
@@ -294,7 +315,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
+
   .t {
     margin: 0;
     width: 0.625rem;
@@ -305,6 +326,7 @@ body {
     font-family: inherit;
     align-items: center;
   }
+
   .t-wrapper {
     height: 3.5rem;
     flex-direction: row;
@@ -318,6 +340,7 @@ body {
     color: var(--color-black);
     font-family: var(--version-2-body);
   }
+
   .contact-list-v1-mobile-inner2 {
     align-self: stretch;
     display: flex;
@@ -327,6 +350,7 @@ body {
     padding: var(--padding-5xs) 0;
     z-index: 8;
   }
+
   .frame-child9 {
     position: absolute;
     top: 0;
@@ -338,6 +362,7 @@ body {
     width: 100%;
     height: 100%;
   }
+
   .tw {
     position: absolute;
     top: 1rem;
@@ -350,11 +375,13 @@ body {
     height: 0.625rem;
     z-index: 1;
   }
+
   .ellipse-parent4 {
     height: 2.625rem;
     flex: 1;
     position: relative;
   }
+
   .profile-badge7 {
     width: 2.625rem;
     border-radius: var(--br-26xl);
@@ -364,6 +391,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   .antomgmailcom7,
   .anton-mayer7 {
     position: relative;
@@ -371,6 +399,7 @@ body {
     display: flex;
     align-items: center;
   }
+
   .anton-mayer7 {
     margin: 0;
     width: 6.938rem;
@@ -379,6 +408,7 @@ body {
     font-weight: 400;
     font-family: inherit;
   }
+
   .antomgmailcom7 {
     align-self: stretch;
     height: 1.188rem;
@@ -386,12 +416,14 @@ body {
     color: var(--version-2-main-color);
     white-space: nowrap;
   }
+
   .anton-mayer-parent5,
   .contact-name7 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
   }
+
   .anton-mayer-parent5 {
     width: 7.688rem;
     flex-direction: column;
@@ -401,6 +433,7 @@ body {
     color: var(--color-black);
     font-family: var(--version-2-body);
   }
+
   .contact-name7 {
     align-self: stretch;
     border-radius: var(--br-3xs);
@@ -410,6 +443,7 @@ body {
     gap: var(--gap-16xl);
     z-index: 9;
   }
+
   .contact-list-v1-mobile-item {
     align-self: stretch;
     height: 5.625rem;
@@ -418,6 +452,7 @@ body {
     flex-shrink: 0;
     display: none;
   }
+
   .contact-list-v1-mobile,
   .contact-list-v1-mobile-wrapper,
   .header-mobile {
@@ -426,6 +461,7 @@ body {
     justify-content: flex-start;
     max-width: 100%;
   }
+
   .contact-list-v1-mobile {
     flex: 1;
     background-color: var(--white);
@@ -433,10 +469,12 @@ body {
     padding: var(--padding-5xl) var(--padding-5xl) 7.125rem;
     box-sizing: border-box;
   }
+
   .contact-list-v1-mobile-wrapper,
   .header-mobile {
     align-self: stretch;
   }
+
   .contact-list-v1-mobile-wrapper {
     height: 48.188rem;
     background-color: var(--white);
@@ -452,14 +490,17 @@ body {
     color: var(--white);
     font-family: var(--font-inter);
   }
+
   .header-mobile {
     flex-direction: column;
   }
+
   .person-add-icon {
     height: 2rem;
     width: 2rem;
     position: absolute;
   }
+
   .secondary-mobile-contact-v1 {
     position: absolute;
     width: 4rem;
@@ -474,6 +515,7 @@ body {
     bottom: 50px;
     right: 50px;
 }
+
   .menu-icons1 {
     height: 1.5rem;
     width: 1.5rem;
@@ -481,6 +523,7 @@ body {
     overflow: hidden;
     flex-shrink: 0;
   }
+
   .menu-icons {
     display: flex;
     flex-direction: row;
@@ -488,12 +531,14 @@ body {
     justify-content: flex-start;
     padding: 0 var(--padding-3xl);
   }
+
   .summary {
     position: relative;
     line-height: 120%;
     display: inline-block;
     min-width: 4.25rem;
   }
+
   .menu-button {
     border-radius: var(--br-5xs);
     display: flex;
@@ -503,11 +548,13 @@ body {
     padding: var(--padding-mini) var(--padding-9xs-5);
     gap: var(--gap-9xs);
   }
+
   .menu-icons2 {
     height: 1.5rem;
     width: 1.5rem;
     position: relative;
   }
+
   .menu-icons-wrapper {
     display: flex;
     flex-direction: row;
@@ -515,12 +562,14 @@ body {
     justify-content: flex-start;
     padding: 0 var(--padding-4xs) 0 var(--padding-3xs-5);
   }
+
   .summary1 {
     position: relative;
     line-height: 120%;
     display: inline-block;
     min-width: 2.688rem;
   }
+
   .menu-button1 {
     border-radius: var(--br-5xs);
     display: flex;
@@ -530,11 +579,13 @@ body {
     padding: var(--padding-mini) var(--padding-base);
     gap: var(--gap-9xs);
   }
+
   .menu-icons3 {
     height: 1.5rem;
     width: 1.5rem;
     position: relative;
   }
+
   .menu-icons-container {
     display: flex;
     flex-direction: row;
@@ -542,12 +593,14 @@ body {
     justify-content: flex-start;
     padding: 0 var(--padding-xl);
   }
+
   .summary2 {
     position: relative;
     line-height: 120%;
     display: inline-block;
     min-width: 4rem;
   }
+
   .menu-button2 {
     border-radius: var(--br-5xs);
     display: flex;
@@ -557,11 +610,13 @@ body {
     padding: var(--padding-mini) var(--padding-7xs-5);
     gap: var(--gap-9xs);
   }
+
   .menu-icons4 {
     height: 1.5rem;
     width: 1.5rem;
     position: relative;
   }
+
   .menu-icons-frame {
     display: flex;
     flex-direction: row;
@@ -569,12 +624,14 @@ body {
     justify-content: flex-start;
     padding: 0 var(--padding-lgi);
   }
+
   .summary3 {
     position: relative;
     line-height: 120%;
     display: inline-block;
     min-width: 3.875rem;
   }
+
   .menu-button3 {
     border-radius: var(--br-5xs);
     display: flex;
@@ -585,12 +642,14 @@ body {
     gap: var(--gap-9xs);
     color: var(--version-2-main-color);
   }
+
   .contacts-mobile,
   .menu-2-mobile-a-v1 {
     background-color: var(--white);
     display: flex;
     align-items: flex-start;
   }
+
   .menu-2-mobile-a-v1 {
     align-self: stretch;
     box-shadow: 0-1px 6px rgba(0, 0, 0, 0.1);
@@ -599,6 +658,7 @@ body {
     padding: 0 var(--padding-base);
     gap: var(--gap-xl);
   }
+
   .contacts-mobile {
     width: 100%;
     position: relative;
@@ -612,42 +672,50 @@ body {
     color: var(--menu-color);
     font-family: var(--version-2-body);
   }
+
   @media screen and (max-width: 392px) {
     .contact-name6,
     .menu-2-mobile-a-v1 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 385px) {
     .contact-name5 {
       gap: var(--gap-mid);
     }
   }
+
   @media screen and (max-width: 382px) {
     .contact-name7 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 380px) {
     .contact-name5 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 352px) {
     .contact-name3 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 344px) {
     .contact-name2 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 342px) {
     .contact-name1 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 328px) {
     .contact-name {
       flex-wrap: wrap;
@@ -656,55 +724,63 @@ body {
       height: auto;
     }
   }
+
   @media screen and (max-width: 324px) {
     .contact-name6 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 320px) {
     .contact-name5 {
       gap: var(--gap-mid);
     }
   }
+
   @media screen and (max-width: 312px) {
     .contact-name7 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 307px) {
     .contact-name4 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 291px) {
     .contact-name3 {
       gap: var(--gap-mid);
     }
   }
+
   @media screen and (max-width: 284px) {
     .contact-name4 {
       flex-wrap: wrap;
     }
   }
+
   @media screen and (max-width: 282px) {
     .contact-name2 {
       gap: var(--gap-mid);
     }
   }
+
   @media screen and (max-width: 280px) {
     .contact-name1 {
       gap: var(--gap-mid);
     }
   }
+
   @media screen and (max-width: 265px) {
     .contact-name {
       gap: var(--gap-mid);
     }
   }
+
   @media screen and (max-width: 261px) {
     .contact-name6 {
       gap: var(--gap-mid);
     }
   }
-  
-  

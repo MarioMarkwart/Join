@@ -14,6 +14,7 @@
     --padding-0616: 6px 16px 6px 16px;
     --clr-btn-border: #647188;
     --addTask-transistion: all 0.1s ease;
+    --clr-border-light: rgba(0,0,0,.2)
 }
 
 .bold {
@@ -41,7 +42,7 @@ input,
 textarea {
     border: none;
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: 1px solid var(--clr-border-light);
     font-size: 1.188rem;
     margin: 0;
 }
@@ -62,7 +63,7 @@ select:hover {
 
 textarea {
     height: 100px;
-    border: 1px solid rgba(0, 0, 0, .2);
+    border: 1px solid var(--clr-border-light);
     border-radius: 0 10px 10px 10px
 }
 
@@ -109,7 +110,6 @@ select {
     }
 }
 
-
 .addTaskBodyLeft{
     display: flex;
     flex-direction: column;
@@ -119,7 +119,6 @@ select {
     cursor: default;
     width: min-content;
 }
-
 
 .addTaskBodyRight{
     display: flex;
@@ -132,7 +131,6 @@ select {
 
 }
 
-
 .addTaskBtnContainer{
     display: flex;
     justify-content: flex-end;
@@ -140,7 +138,6 @@ select {
     gap: 25px;
     cursor: default;
     padding-bottom: 5px;
-    
 }
 
 .addTaskBtn{
@@ -155,7 +152,6 @@ select {
     font-size: 1.438rem;
     transition: var(--addTask-transistion);
 }
-
 
 .clearBtn{
     display: flex;
@@ -194,7 +190,7 @@ select {
     width: max-content;
     border: none;
     height: 61px;
-    
+
     &:hover:not(.disabled){
         background-color: var(--clr-contact-marked-hover);
         cursor: pointer;
@@ -243,7 +239,6 @@ select {
     gap: var(--addTaskGap-8);
 }
 
-
 .addTaskDueDateInputContainer {
     position: relative;
     display: flex;
@@ -280,14 +275,8 @@ select {
     width: 24px;
     height: 24px;
     cursor: pointer;
-    
-}
 
-/* #addTaskDueDateInput{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-} */
+}
 
 .addTaskBodyTop {
     display: flex;
@@ -311,10 +300,6 @@ select {
     gap: var(--addTaskGap-24);
     width: 440px;
 }
-
-
-/* Assigned To */
-
 
 .addTaskDropdownAssignedTo {
     display: flex;
@@ -347,12 +332,6 @@ select {
 .addTask-dropdown-category {
     padding: var(--padding-1216)
 }
-
-/* .subtaskBottom:hover,
-.addTask-custom-select:hover,
-.addTask-dropdown-contact:hover{
-    box-shadow: 0 2px 1px -1px var(--clr-contact-marked)
-} */
 
 .addTask-custom-select {
     font-size: 1.188rem;
@@ -414,8 +393,6 @@ select {
     gap: var(--addTaskGap-8);
 }
 
-
-
 .dropdownOption:hover {
     background-color: var(--clr-contact-hover);
 }
@@ -436,12 +413,6 @@ select {
     padding-bottom: var(--addTaskPaddingBottom);
 }
 
-.d-none {
-    display: none;
-}
-
-
-/* --- Priority buttons --- */
 .addTaskPriority {
     display: flex;
     flex-direction: column;
@@ -464,20 +435,20 @@ select {
     border-radius: 10px;
     padding: 18px 10px 18px 10px;
     background-color: white;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 4px 0 var(--clr-border-light);
     cursor: pointer;
 }
 
 #addTaskPriorityButtonLow:hover:not(.active) {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2), 0 3px 1px -1px var(--clr-prio-low)
+    box-shadow: 0 0 4px 0 var(--clr-border-light), 0 3px 1px -1px var(--clr-prio-low)
 }
 
 #addTaskPriorityButtonMedium:hover:not(.active) {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2), 0 3px 1px -1px var(--clr-prio-medium)
+    box-shadow: 0 0 4px 0 var(--clr-border-light), 0 3px 1px -1px var(--clr-prio-medium)
 }
 
 #addTaskPriorityButtonUrgent:hover:not(.active) {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2), 0 3px 1px -1px var(--clr-prio-urgent)
+    box-shadow: 0 0 4px 0 var(--clr-border-light), 0 3px 1px -1px var(--clr-prio-urgent)
 }
 
 .subtaskBottom {
@@ -491,7 +462,7 @@ select {
     #subtaskInputFieldDiv{
         color: #D1D1D1;
     }
-    
+
     input {
         border-bottom: none;
         cursor: pointer;
@@ -673,7 +644,6 @@ select {
     }
 }
 
-
 @media (max-width: 801px) {
     .main{
         justify-content: center;
@@ -681,8 +651,6 @@ select {
 }
 
 @media screen and (max-width: 560px) {
-
-
     .addTaskBodyTop,
     .addTaskBodyBottom{
         max-width: 400px;

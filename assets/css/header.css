@@ -50,7 +50,6 @@
   width: 46.12px;
   height: 46.12px;
   cursor: pointer;
-  /* viewbox: 0 0 100 100; */
 }
 
 .small-menu {
@@ -78,7 +77,6 @@
 
 .small-menu.visible {
   z-index: 1;
-  /* opacity: 1; */
 }
 
 .small-menu-mobile {
@@ -148,8 +146,4 @@
     background-color: var(--clr-main);
     box-shadow: -2px 0px 6px 0px rgb(0, 0, 0, 0.2);
   }
-}
-
-.d-none {
-  display: none;
 }

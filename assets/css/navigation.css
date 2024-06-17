@@ -109,15 +109,11 @@
   background-color: var(--clr-main);
 }
 
-/*////////////////////////////////////////////////////////////////////max  950px*/
-
 @media (max-width: 950px) {
   .navigation-content {
     padding-inline: 8px;
   }
 }
-
-/*////////////////////////////////////////////////////////////////////max  801px*/
 
 @media (max-width: 801px) {
   .navigation-container {
@@ -200,12 +196,15 @@
   .nav-buttons-box {
     justify-content: space-evenly;
     gap: 12px;
+
     a {
       font-size: 14px;
     }
+
     img {
       width: 16px;
     }
+
     gap: 5px;
   }
 

@@ -1,22 +1,25 @@
 :root {
-  --clr-main: #4589ff;
-  --clr-text-menu: #42526e;
-  --clr-text-good-morning: #2a3647;
-  --clr-text-menu-hover: #e3eeff;
+  --clr-main: #4589FF;
+  --clr-text-menu: #42526E;
+  --clr-text-good-morning: #2A3647;
+  --clr-text-menu-hover: #E3EEFF;
   --clr-button-todo: #d2e3ff;
   --clr-text-medium-blue: #005dff;
-  --clr-input-focus: #0d99ff;
-  --clr-icon: #a8a8a8;
-  --clr-style-lightgrey: #d1d1d1;
-  --clr-style-lightblue: #29abe2;
+  --clr-input-focus: #0D99FF;
+  --clr-icon: #A8A8A8;
+  --clr-style-lightgrey: #D1D1D1;
+  --clr-style-lightblue: #29ABE2;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
-  /* font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
   font-family: "Open Sans", sans-serif;
+
+  /* disable text-selection */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 html {
@@ -49,7 +52,6 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  /* border-right: 1px solid #eee; */
 }
 
 .bodyContent {

@@ -24,7 +24,6 @@
   align-items: center;
   grid-column-gap: 24px;
   grid-row-gap: 24px;
-  /* margin-bottom: 48px; */
 }
 
 .inBoard {
@@ -87,10 +86,12 @@ div.square-button.toDo {
   .amount {
     color: #000;
   }
+
   span,
   .amount {
     color: var(--clr-main);
   }
+
   img {
     border: 3px solid #fff;
     border-radius: 50%;
@@ -101,10 +102,12 @@ div.square-button.toDo {
   background-color: #fff;
   color: var(--clr-text-medium-blue);
   transform: scale(1.04, 1.04);
+
   span,
   .amount {
     color: var(--clr-text-medium-blue);
   }
+
   img {
     transition: border-color 0s ease;
   }
@@ -115,10 +118,12 @@ div.square-button.toDo {
   color: #fff;
   transform: scale(1);
   border-radius: 30px;
+
   span,
   .amount {
     color: white;
   }
+
   img {
     border: 3px solid #fff;
     border-radius: 50%;
@@ -285,9 +290,11 @@ button {
 .urgentAndDate:hover {
   border-radius: 0px 30px 30px 30px;
   transform: scale(1.04, 1.04);
+
   img {
     transform: scale(1.04, 1.02);
   }
+
   transition-timing-function: ease-in-out;
   background-color: #fff;
   border: 1px solid lightgrey;
@@ -369,7 +376,6 @@ button {
 
 .greeting-container {
   background-color: #fff;
-  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -404,9 +410,6 @@ button {
   text-align: center;
 }
 
-/*////////////////////////////Media Queries /////////////////////////////////////*/
-
-/* / ///////////////////////////////////////////////////////////////////max 465px*/
 @media (max-width: 465px) {
   .button-container {
     display: grid;
@@ -453,6 +456,7 @@ button {
     margin: 0;
     width: 132px;
     height: 142px;
+
     span {
       font-weight: 400;
       font-size: 17px;
@@ -516,7 +520,6 @@ button {
   }
 }
 
-/* / ///////////////////////////////////////////////////////////////////max 600px*/
 @media (min-width: 465px) and (max-width: 600px) {
   .sub-main-summary {
     width: -webkit-fill-available;
@@ -578,7 +581,6 @@ button {
     width: 396px;
     height: 106px;
 
-    /*das ist neu von unten:*/
     .inner-square-button {
       gap: 8px;
       display: flex;
@@ -643,7 +645,6 @@ button {
   }
 }
 
-/*////////////////////////////////////////////////////////////////////max 800px*/
 @media (max-width: 800px) {
   .daytimeGreeting {
     display: none;
@@ -658,7 +659,6 @@ button {
   }
 }
 
-/*////////////////////////////////////////////////////////////////////min 700px*/
 @media (max-width: 949px) {
   .inner-square-button.toDo {
     display: flex;
@@ -682,7 +682,6 @@ button {
   }
 
   .greetingContainer-and-subMainSummary {
-    /* margin-top: 180px; */
     overflow: hidden;
   }
 
@@ -798,8 +797,6 @@ button {
   }
 }
 
-/*/ ///////////////////////////////////////////////////////////////////min    950px*/
-
 @media only screen and (min-width: 950px) and (max-width: 1204px) {
   .summary-box {
     margin-top: 0;
@@ -808,11 +805,9 @@ button {
 
   .h1-box {
     gap: 24px;
-    /* margin: 32px 0 54px 48px; */
   }
 
   #usernameForGreeting {
-    /* margin: 9.5px 0 2px 0; */
     font-size: 48px;
   }
 
@@ -835,7 +830,6 @@ button {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
     width: calc((204px * 3) + (2 * 24px));
-    /* height: 150px; */
   }
 
   .toDo {
@@ -864,18 +858,14 @@ button {
   .feedback {
     height: 219px;
     width: 204px;
-    /* margin-bottom: 24px; */
   }
 
   .done {
     height: 219px;
     width: 204px;
-    /* margin-bottom: 24px; */
   }
 }
 
-/*////////////////////////////////////////////////////////////////////min 1204px*/
-/* Medium Devices, Desktops */
 @media only screen and (min-width: 1204px) {
   .button-container {
     display: grid;
@@ -883,7 +873,6 @@ button {
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
-    /* gap: 24px; */
     grid-column-gap: 24px;
     grid-row-gap: 24px;
   }
@@ -960,18 +949,4 @@ button {
   text-align: left;
   color: var(--clr-text-good-morning);
   align-content: center;
-}
-
-/* #usernameForGreeting {
-  max-width: fit-content;
-  color: var(--clr-main);
-  height: 58px;
-  margin: 9.5px 0 9.5px 22px;
-  font-family: Open Sans;
-  font-size: 64px;
-  font-weight: 700;
-} */
-
-.d-none {
-  display: none;
 }
