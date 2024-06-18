@@ -211,8 +211,8 @@ function renderSubtasksToOpenCard(task){
         let completed = subtask['completed'] ? 'completed' : '';
 
         content.innerHTML += /*html*/`
-        <div class="openCardSubtask" ${completed}>
-            <div class="openCardSubtaskImgContainer" onclick="setSubtaskState(${task.id}, ${index})"></div>
+        <div class="openCardSubtask" ${completed} onclick="setSubtaskState(${task.id}, ${index})">
+            <div class="openCardSubtaskImgContainer" ></div>
             ${subtask['subtaskText']}
         </div>`
     })

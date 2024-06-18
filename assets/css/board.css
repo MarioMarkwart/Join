@@ -573,12 +573,19 @@ progress{
     gap: 8px;
 }
 
+#openCardSubtasks{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
 .openCardSubtask{
     display: flex;
     align-items: center;
     padding: 6px 16px;
     gap: 16px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .openCardSubtaskImgContainer{
@@ -590,12 +597,10 @@ progress{
 }
 
 .openCardSubtask[completed] .openCardSubtaskImgContainer {
-    cursor: pointer;
     background-image: url('../img/icon-check_button_checked.png');
 }
 
 .openCardSubtask .openCardSubtaskImgContainer {
-    cursor: pointer;
     background-image: url('../img/icon-check_button_unchecked.png');
 }
 
