@@ -579,7 +579,6 @@ progress{
     padding: 6px 16px;
     gap: 16px;
     font-size: 1rem;
-    text-transform: capitalize;
 }
 
 .openCardSubtaskImgContainer{
