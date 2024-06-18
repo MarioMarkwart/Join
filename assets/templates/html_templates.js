@@ -429,7 +429,7 @@ function editSubtaskHTML(subtask) {
 
 function renderSubtaskInputFieldHTML(){
     return /*html*/`
-     <input type="text" id="subtaskInputField" placeholder="Add new subtask" onclick="doNotClose(event)">
+     <input type="text" id="subtaskInputField" onkeyup="subtasksCheck(event)" placeholder="Add new subtask" onclick="doNotClose(event)">
      <div class="subtaskAddOrCancel">
          <div id="subtaskImgAddCheck" class="subtaskImgDiv pointer" onclick="subtaskAddOrCancel('add'); doNotClose(event)"></div>
          <div class="vLine"></div>

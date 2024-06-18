@@ -135,8 +135,9 @@ function setPriorityImage(taskPriority) {
  * Searches for tasks based on the value of the search input.
  *
  */
-function searchTask() {
+function searchTask(event) {
     let searchInput = document.getElementById('findTask');
+    if(event.key === 'Escape') searchInput.value = null;
     if(searchInput == null) return;
     let foundTasks = tasks.filter(task => task['title'].toLowerCase().includes(searchInput.value) || task['description'].toLowerCase().includes(searchInput.value));
     renderCategories(foundTasks);
@@ -367,7 +368,6 @@ function createEditFooter(task){
  */
 function displayEmptyTask(taskId, categoryId){
     let cardHeight = "min-height: "+  document.getElementById(taskId).clientHeight + "px";
-    // let cardHeight = "min-height: 100%";
     let cardWidth = "min-width: "+  document.getElementById(taskId).clientWidth + "px";
     let cardStyle = cardHeight + "; " + cardWidth;
 
@@ -379,4 +379,15 @@ function displayEmptyTask(taskId, categoryId){
 
     newDiv.style = cardStyle;
     document.getElementById('category-' + categoryId).appendChild(newDiv);
+}
+
+
+function checkSearchTask(event)
+{
+    console.log(event.key);
+    if(event.key === 'Enter')
+    {
+        console.log(event.key);
+        searchTask();
+    }
 }
