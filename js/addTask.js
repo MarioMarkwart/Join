@@ -74,6 +74,20 @@ function renderSubtaskInputField(){
 
 
 /**
+ * Checks for the Enter key or Escape key press event and triggers the corresponding action.
+ *
+ * @param {Event} event - The keyboard event object.
+ */
+function subtasksCheck(event){
+    if(event.key === 'Enter'){
+        subtaskAddOrCancel('add');
+    }else if(event.key === 'Escape'){
+        subtaskAddOrCancel('cancel');
+    }
+}
+
+
+/**
  * Handles adding or canceling a subtask based on the option provided.
  *
  * @param {string} option - The option to add or cancel a subtask.
